@@ -1,0 +1,133 @@
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="/style-guide/css/fluig-style-guide.min.css"/>
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/mustache/mustache-min.js"></script>
+	<script type="text/javascript" src="/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
+</head>
+<body>
+<div class="fluig-style-guide">
+<form name="form" role="form">
+		<div class="panel panel-primary">
+		<div class="panel-heading">
+		    <h3 class="panel-title"><i class="fluigicon fluigicon-user icon-md" aria-hidden="true"></i>Requisitante</h3>
+		</div>
+		<div class="panel-body">
+	<div class="row">
+			<div class="form-group col-md-6">
+		 	<label for="nome">Nome</label>
+		<input type="text" name="nome" id="nome" class="form-control">
+			</div>
+			
+		 	<div class="form-group col-md-4">
+		 	<label for="email">Email</label>
+		<input type="text" name="email" id="email" class="form-control">
+			</div>
+			
+		 	<div class="form-group col-md-2">
+		 	<label for="Telefone">Telefone</label>
+		<input type="text" name="Telefone" id="Telefone" class="form-control">
+			</div>		
+			</div>
+    <div class="row">
+			<div class="form-group col-md-2">
+			<label for="documentoidentidade">Documento de Identidade</label>
+			<input type="text" name="documentoidentidade" id="documentoidentidade" class="form-control">
+			
+			</div>
+			<div class="form-group col-md-2">
+				<label for="datanascimento">Data de Nascimento</label>
+			<input type="text" name="datanascimento" id="datanascimento" class="form-control">
+			</div>
+			
+			</div>
+		</div>
+		</div>
+	<div class="panel panel-primary">
+		    <div class="panel-heading">
+		        <h3 class="panel-title"><i class="fluigicon fluigicon-map-marker icon-md" aria-hidden="true"></i>
+		        Ponto Comercial</h3>
+		    </div>
+		    <div class="panel-body">
+		    <div class="row">
+		 	<div class="form-group col-md-2">
+		 	<label for="TipoPonto">Tipo do Ponto</label>	
+		 	<div class="radio">
+		 		<label><input type="radio" name="TipoPonto" id="TipoPonto" value="Quiosque">Quiosque</label>
+		 		<label><input type="radio" name="TipoPonto" id="TipoPonto" value="Loja">Loja</label>
+		 		</div>
+		 	 </div>
+		 	<div class="form-group col-md-4">
+		 	<label>Dias de Funcionamento</label>
+		 	<div class="checkbox">
+		 	<label><input type="checkbox" name="Domingo">Dom</label>
+		 	<label><input type="checkbox" name="Segunda">Seg</label>
+		 	<label><input type="checkbox" name="Terca">Ter</label>
+		 	<label><input type="checkbox" name="Quarta">Qua</label>
+		 	<label><input type="checkbox" name="Quinta">Qui</label>
+		 	<label><input type="checkbox" name="Sexta">Sex</label>
+		 	<label><input type="checkbox" name="Sabado">Sab</label>	
+		 		</div>
+		 	</div>
+		 </div>
+	 <div class="row">
+				<div class="form-group col-md-2">
+				<label for="cep">CEP</label>
+				<input type="text" name="cep" id="cep" class="form-control" mask="00000-000">
+				</div>
+				<div class="form-group col-md-3">
+				<label for="logradouro">logradouro</label>
+				<input type="text" name="logradouro" id="logradouro" class="form-control">
+				</div>
+				<div class="form-group col-md-1">
+				<label for="numero">Numero</label>
+				<input type="text" name="numero" id="numero" class="form-control">
+				</div>
+				<div class="form-group col-md-2">
+				<label for="bairro">Bairro</label>
+				<input type="text" name="bairro" id="bairro" class="form-control">
+				</div>
+				<div class="form-group col-md-2">
+				<label for="cidade">Cidade</label>
+				<input type="text" name="cidade" id="cidade" class="form-control">
+				</div>
+				<div class="form-group col-md-1">
+				<label for="estado">Estado</label>
+				<input type="text" name="estado" id="estado" class="form-control">
+				</div>				
+			</div>
+			<div class="row">
+				<div class="form-group col-md-12">
+					<label for="informacoes">Informações Adicionais</label>
+					<textarea rows="5" name="informacoes" id="informacoes" class="form-control"></textarea>
+				</div>
+			</div>
+			
+				</div>
+				</div>
+
+		<div class="panel panel-primary">
+		    <div class="panel-heading">
+		        <h3 class="panel-title"><i class="fluigicon fluigicon-money icon-md" aria-hidden="true"><i>Financeiro</h3>
+		    </div>
+		    <div class="panel-body">
+		    <div class="row">
+		 	<div class="form-group col-md-2">
+				<label for="Valor">Valor</label>
+				<input type="number" name="Valor" id="Valor" class="form-control">
+				</div>
+			</div>
+  
+		</div>
+	</div>
+  
+  
+</form>
+</div>
+</body>
+<script type="text/javascript" src="cep.js"></script>
+<script type="text/javascript">
+var calendarioDataNascimento = FLUIGC.calendar('#DataNascimento');
+</script>
+</html>
